@@ -1,12 +1,25 @@
 import React from 'react';
-import { View, Text } from 'react-native';
-import styles from './systemDataStyle';
+import { StatusBar, Text } from 'react-native';
+import LinearGradient from "react-native-linear-gradient";
+import Header from '../../components/header/Header';
+import SystemApiData from '../../components/systemData/SystemApiData';
+import { DARK_GRADIENT_COLOR, LIGHT_GRADIENT_COLOR } from '../../constants/colors';
+import styles from '../systemsList/systemsListStyle';
 
-const SystemData = () => {
+const SystemData = ({ 
+    navigation: { 
+        getParam, 
+    },
+}) => {
     return (
-        <View style={styles.container}>
-            <Text>The SystemData screen!</Text>
-        </View>
+        <LinearGradient
+            colors={[LIGHT_GRADIENT_COLOR, DARK_GRADIENT_COLOR]}
+            style={styles.container}
+        >
+            <StatusBar translucent />
+            <Header title={getParam('title')} />
+            <SystemApiData />
+        </LinearGradient>
     );
 }
 
