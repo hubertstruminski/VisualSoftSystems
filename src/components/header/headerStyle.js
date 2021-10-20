@@ -14,6 +14,6 @@ export default StyleSheet.create({
         marginLeft: wp(25),
         color: WHITE_COLOR,
         fontSize: RFValue(18),
-        fontWeight: '300',
+        fontFamily: 'Lato-Light',
     }
 });

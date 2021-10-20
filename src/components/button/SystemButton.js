@@ -1,5 +1,9 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
+import { 
+    View, 
+    TouchableOpacity, 
+    Text 
+} from 'react-native';
 import { withNavigation } from 'react-navigation';
 import styles from './systemButtonStyle';
 

@@ -1,6 +1,9 @@
 import { StyleSheet } from 'react-native';
 import { SYSTEM_BUTTON_BACKGROUND_COLOR } from '../../constants/colors';
-import { hp, wp } from '../../tools/layoutTools';
+import { 
+    hp, 
+    wp 
+} from '../../tools/layoutTools';
 
 export default StyleSheet.create({
     container: {

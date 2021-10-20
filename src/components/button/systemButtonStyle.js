@@ -1,7 +1,14 @@
 import { StyleSheet } from 'react-native';
-import { SYSTEM_BUTTON_BACKGROUND_COLOR, SYSTEM_BUTTON_BORDER_COLOR, WHITE_COLOR } from '../../constants/colors';
+import { 
+    SYSTEM_BUTTON_BACKGROUND_COLOR, 
+    SYSTEM_BUTTON_BORDER_COLOR, 
+    WHITE_COLOR 
+} from '../../constants/colors';
 import { RFValue } from "react-native-responsive-fontsize";
-import { hp, wp } from '../../tools/layoutTools';
+import { 
+    hp, 
+    wp 
+} from '../../tools/layoutTools';
 
 export default StyleSheet.create({
     container: {
@@ -18,6 +25,6 @@ export default StyleSheet.create({
     text: {
         color: WHITE_COLOR,
         fontSize: RFValue(18),
-        fontWeight: '300',
+        fontFamily: 'Lato-Light',
     }
 });

@@ -1,5 +1,9 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { View, AppState } from 'react-native';
+import React, { 
+    useEffect, 
+    useRef, 
+    useState 
+} from 'react';
+import { View } from 'react-native';
 import { withNavigation } from 'react-navigation';
 import DateContainer from './DateContainer';
 import NumberDataContainer from './NumberDataContainer';
@@ -13,40 +17,25 @@ const SystemApiData = ({ navigation }) => {
 
     useEffect(() => {
         fetchData();
-        AppState.addEventListener('change', handleAppStateChange);
-
         const focusListener = navigation.addListener("didFocus", fetchDataWithIntervals);
+        
         return () => {
-            if(interval?.current) {
-                clearInterval(interval.current);
-                interval.current = null;
-            }
-            AppState.removeEventListener('change', handleAppStateChange);
+            clearMonitoringDataInterval();
             focusListener.remove();
         }
     }, []);
 
-    useEffect(() => {
-        if(data) {
-            fetchDataWithIntervals();
-        }
-    }, [data]);
+    useEffect(() => data && fetchDataWithIntervals(), [data]);
 
-    const handleAppStateChange = (nextState) => {
-        if (nextState === 'active') {
-            fetchDataWithIntervals();
-        } else {
-            if(interval.current) {
-                clearInterval(interval.current);
-                interval.current = null;
-            }
+    const clearMonitoringDataInterval = () => {
+        if(interval?.current) {
+            clearInterval(interval.current);
+            interval.current = null;
         }
-    };
+    }
 
     const fetchData = async () => {
         const response = await fetchMonitoringData();
-        console.log("@@@@ responseTime: " + new Date());
-        console.log(response?.data);
         setData(response?.data);
     }
 
@@ -61,9 +50,23 @@ const SystemApiData = ({ navigation }) => {
 
     return (
         <View style={styles.container}>
-            <SystemTitle />
-            <NumberDataContainer />
-            <DateContainer />
+            <SystemTitle 
+                systemTitle={data?.Name}
+                avgResponseWarningLimit={data?.AvgResponseTimeWarningLimit}
+                avgResponseAlertLimit={data?.AvgResponseTimeAlertLimit}
+                avgResponseTime={data?.AvgResponseTime}
+                url={data?.Url}
+            />
+            <NumberDataContainer 
+                errors={data?.Errors}
+                warnings={data?.Warnings}
+                operations={data?.Operations}
+            />
+            <DateContainer 
+                lastErrorStr={data?.LastErrorStr}
+                lastSync={data?.LastSync}
+                dailyErrorCount={data?.DailyErrorCount}
+            />
         </View>
     );
 }

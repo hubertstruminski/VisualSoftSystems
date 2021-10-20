@@ -13,7 +13,11 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1E4C0EEA27D4D3FC2174F66F /* libPods-Systems-SystemsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C692D98B0179E0F7DFE0DA8 /* libPods-Systems-SystemsTests.a */; };
 		3159C32EC04DA41EAF0C10D7 /* libPods-Systems.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D5D88A2B7AF0EADF78A013E /* libPods-Systems.a */; };
+		3CC6E5173D594BBCBEC7F48D /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDDBEA79852C45EF9BE76800 /* Lato-Regular.ttf */; };
+		7A1E71312CF148C1A87B1AF4 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFCF4EF8806F4D64AD8848A2 /* Lato-Bold.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C3E714ABD007414590CF55A5 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BD2C255F76B4A458F573FEA /* Lato-Thin.ttf */; };
+		E00C6744E3524CEABB0C96A3 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D910683A535A4DACA5FC550E /* Lato-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,12 +41,16 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Systems/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Systems/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Systems/main.m; sourceTree = "<group>"; };
+		3BD2C255F76B4A458F573FEA /* Lato-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Thin.ttf"; path = "../assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; };
 		4C692D98B0179E0F7DFE0DA8 /* libPods-Systems-SystemsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Systems-SystemsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D5D88A2B7AF0EADF78A013E /* libPods-Systems.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Systems.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Systems/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B481E19283A9AA13F640893 /* Pods-Systems-SystemsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Systems-SystemsTests.debug.xcconfig"; path = "Target Support Files/Pods-Systems-SystemsTests/Pods-Systems-SystemsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B37C01FE420D35315E5AAB41 /* Pods-Systems.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Systems.debug.xcconfig"; path = "Target Support Files/Pods-Systems/Pods-Systems.debug.xcconfig"; sourceTree = "<group>"; };
+		D910683A535A4DACA5FC550E /* Lato-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Light.ttf"; path = "../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EDDBEA79852C45EF9BE76800 /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		EFCF4EF8806F4D64AD8848A2 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
 		F2CEE1A08280C0138AB462E6 /* Pods-Systems-SystemsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Systems-SystemsTests.release.xcconfig"; path = "Target Support Files/Pods-Systems-SystemsTests/Pods-Systems-SystemsTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +89,18 @@
 				00E356F11AD99517003FC87E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		01AB8027EF644902BEACE7AF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EFCF4EF8806F4D64AD8848A2 /* Lato-Bold.ttf */,
+				D910683A535A4DACA5FC550E /* Lato-Light.ttf */,
+				EDDBEA79852C45EF9BE76800 /* Lato-Regular.ttf */,
+				3BD2C255F76B4A458F573FEA /* Lato-Thin.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* Systems */ = {
@@ -134,6 +154,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				71D84F12C81176A7864961E8 /* Pods */,
+				01AB8027EF644902BEACE7AF /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -245,6 +266,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				7A1E71312CF148C1A87B1AF4 /* Lato-Bold.ttf in Resources */,
+				E00C6744E3524CEABB0C96A3 /* Lato-Light.ttf in Resources */,
+				3CC6E5173D594BBCBEC7F48D /* Lato-Regular.ttf in Resources */,
+				C3E714ABD007414590CF55A5 /* Lato-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

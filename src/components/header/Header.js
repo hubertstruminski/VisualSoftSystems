@@ -1,12 +1,16 @@
 import React from 'react';
-import { View, TouchableWithoutFeedback, Text } from 'react-native';
+import { 
+    View, 
+    TouchableWithoutFeedback, 
+    Text 
+} from 'react-native';
 import { withNavigation } from 'react-navigation';
 import styles from '../header/headerStyle';
 import BackArrow from '../../../assets/icons/backArrow.svg';
 
 const Header = ({ 
     navigation: { 
-        goBack 
+        goBack,
     }, 
     title,
 }) => {
